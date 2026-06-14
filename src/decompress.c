@@ -109,7 +109,11 @@ void LoadSpecialPokePic(const struct CompressedSpriteSheet *src, void *dest, s32
     }
 
     DuplicateDeoxysTiles(dest, species);
-    DrawSpindaSpots(species, personality, dest, isFrontPic);
+    if (species == SPECIES_SPINDA && isFrontPic)
+    {
+        DrawSpindaSpots(personality, dest, FALSE);
+        DrawSpindaSpots(personality, dest, TRUE);
+    }
 }
 
 void Unused_LZDecompressWramIndirect(const void **src, void *dest)
@@ -340,7 +344,11 @@ void LoadSpecialPokePic_2(const struct CompressedSpriteSheet *src, void *dest, s
     }
 
     DuplicateDeoxysTiles(dest, species);
-    DrawSpindaSpots(species, personality, dest, isFrontPic);
+    if (species == SPECIES_SPINDA && isFrontPic)
+    {
+        DrawSpindaSpots(personality, dest, FALSE);
+        DrawSpindaSpots(personality, dest, TRUE);
+    }
 }
 
 void HandleLoadSpecialPokePic_2(const struct CompressedSpriteSheet *src, void *dest, s32 species, u32 personality) // a copy of HandleLoadSpecialPokePic
@@ -401,7 +409,11 @@ void LoadSpecialPokePic_DontHandleDeoxys(const struct CompressedSpriteSheet *src
         LZ77UnCompWram(src->data, dest);
     }
 
-    DrawSpindaSpots(species, personality, dest, isFrontPic);
+    if (species == SPECIES_SPINDA && isFrontPic)
+    {
+        DrawSpindaSpots(personality, dest, FALSE);
+        DrawSpindaSpots(personality, dest, TRUE);
+    }
 }
 
 static void DuplicateDeoxysTiles(void *pointer, s32 species)

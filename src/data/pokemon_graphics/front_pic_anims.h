@@ -3309,6 +3309,18 @@ static const union AnimCmd sAnim_Breloom_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Spinda_1[] =
+{
+    ANIMCMD_FRAME(0, 13),
+    ANIMCMD_FRAME(1, 7),
+    ANIMCMD_FRAME(0, 13),
+    ANIMCMD_FRAME(1, 7),
+    ANIMCMD_FRAME(0, 13),
+    ANIMCMD_FRAME(1, 7),
+    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Wingull_1[] =
 {
     ANIMCMD_FRAME(0, 17),
@@ -5112,9 +5124,7 @@ SINGLE_ANIMATION(Taillow);
 SINGLE_ANIMATION(Swellow);
 SINGLE_ANIMATION(Shroomish);
 SINGLE_ANIMATION(Breloom);
-static const union AnimCmd *const sAnims_Spinda[] ={
-    sAnim_GeneralFrame0,
-};
+SINGLE_ANIMATION(Spinda);
 SINGLE_ANIMATION(Wingull);
 SINGLE_ANIMATION(Pelipper);
 DOUBLE_ANIMATION(Surskit);
