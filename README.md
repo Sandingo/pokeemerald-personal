@@ -1,6 +1,12 @@
-# Pokémon Emerald
+# Pokémon Emerald (Personal Version)
 
-This is a decompilation of Pokémon Emerald.
+If you're seeing this, don't expect anything! I don't plan on doing a full Beyond-style hack for Gen 3. I'm mainly curious about this decomp and wanna try adding some QoL and other random junk that I want.
+___
+#### Some cool resources:
+* [**pret/pokeemerald wiki and tutorials**](https://github.com/pret/pokeemerald/wiki/Tutorials)
+* [**Pokecommunity thread for simple mods**](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/)
+___
+### Default pret stuff:
 
 It builds the following ROM:
 
