@@ -4643,4 +4643,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 290,
         .trainerOffset = 2,
     },
+/// Custom
+    [NATIONAL_DEX_GALLADE] =
+    {
+        .categoryName = _("Blade"),
+        .height = 16,
+        .weight = 520,
+        .description = gGalladePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 290,
+        .trainerOffset = 2,
+    },
 };

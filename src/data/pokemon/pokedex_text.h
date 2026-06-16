@@ -2319,3 +2319,11 @@ const u8 gDeoxysPokedexText[] = _(
     "extraterrestrial virus exposed to a laser\n"
     "beam. Its body is configured for superior\n"
     "agility and speed.");
+
+/// Custom
+
+const u8 gGalladePokedexText[] = _(
+	"A master of courtesy and swordsmanship.\n"
+    "When trying to protect someone, \n"
+    "it extends its elbows as if they\n"
+    "were swords and fights savagely.");
